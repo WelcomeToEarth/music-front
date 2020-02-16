@@ -9,6 +9,12 @@
       <p>专辑：{{list.name}}</p>
       <p>作者：{{list.author}}</p>
       <p>发表年份：{{list.year}}</p>
+      <div>
+        歌曲：<p v-for="(item, index) in list.songs"
+          :key="index">
+          《 {{item}} 》
+        </p>
+      </div>
     </li>
   </ul>
 </div>

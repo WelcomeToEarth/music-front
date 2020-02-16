@@ -6,8 +6,6 @@
   <img
     class="mb-banner"
     src="../imgs/mb/banner.png" />
-  <!-- <div class="mb-logo" /> -->
-  <!-- <MbTotal /> -->
   <div
     v-for="(o, i) of list"
     :key="i">
@@ -16,7 +14,6 @@
       ref="title"><i></i>{{o.t}}</div>
     <component :is="o.m" />
   </div>
-  <!-- <div class="mb-footer">新华社技术局</div> -->
 </div>
 </template>
 

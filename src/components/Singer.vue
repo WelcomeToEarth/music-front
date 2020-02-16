@@ -9,6 +9,12 @@
       <p>歌手：{{list.name}}</p>
       <p>年龄：{{list.age}}</p>
       <p>简介：{{list.introduce}}</p>
+      <div>
+        代表作：<p v-for="(item, index) in list.songs"
+          :key="index">
+          《 {{item}} 》
+        </p>
+      </div>
     </li>
   </ul>
 </div>
