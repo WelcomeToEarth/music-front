@@ -19,14 +19,14 @@
 
 <script>
 import Vue from 'vue';
-import wx from '@/plugins/wx';
+// import wx from '@/plugins/wx';
 // import Share from '@/components/mb-share';
 import Navs from '@/components/Nav';
 import Singer from '@/components/Singer';
 import Ablum from '@/components/Ablum';
 import My from '@/components/My';
 
-Vue.use(wx);
+// Vue.use(wx);
 const list = [
   { t: '歌手', m: 'Singer' },
   { t: '专辑', m: 'Ablum' },

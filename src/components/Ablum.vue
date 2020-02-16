@@ -1,8 +1,6 @@
 <template>
 <div>
-  <ul class="mb-singer"
-    v-loading="loading"
-    v-nodata="!lists.length">
+  <ul class="mb-singer">
     <li v-for="(list, index) in lists"
       :key="index"
       @click="goDetail(list)">
@@ -40,16 +38,16 @@ export default {
     },
     // 获取歌曲列表
     getAblumList(){
-        let that = this
-          fetch('http://localhost:3000/api/ablumList')
-            .then(function(response) {
-                return response.json();
-            })
-            .then(function(myJson) {
-                console.log(myJson);
-                that.lists = myJson
-            });
-      }
+      let that = this
+        fetch('http://localhost:3000/api/ablumList')
+          .then(function(response) {
+              return response.json();
+          })
+          .then(function(myJson) {
+              console.log(myJson);
+              that.lists = myJson
+          });
+    }
   }
 };
 </script>

@@ -1,8 +1,6 @@
 <template>
 <div>
-  <ul class="mb-singer"
-    v-loading="loading"
-    v-nodata="!lists.length">
+  <ul class="mb-singer">
     <li v-for="(list, index) in lists"
       :key="index"
       @click="goDetail(list)">
